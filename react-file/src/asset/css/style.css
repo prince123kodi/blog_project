@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+h4 {
+  margin: 12px 0;
+}
+
+h5 {
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .card-content {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 25px 20px;
+  text-align: left;
+}
+
+.card .card-content .card-tag {
+  background: #f97316;
+  color: #fff;
+  width: fit-content;
+  padding: 5px 12px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.card .card-content .card-title {
+  color: #383f51;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.card .card-content .card-desc {
+  color: #383f51;
+  line-height: 20px;
+  font-weight: 500;
+
+}
+
+.card .card-content .card-profile .card-profile-img {
+  width: 55px;
+  height: 57px;
+}
+
+.card .card-content .card-profile .card-profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.card .card-content .card-profile .card-profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3px;
+  color: #383f51;
+}
+
+.card .card-content .card-profile .card-profile-content h3 {
+  font-size: 18px;
+  color: #000;
+}
+
+.card .card-content .card-profile .card-profile-content span {
+  font-size: 14px;
+  color: #a2a6b7;
+}
+.blog-btn .btn, .add-blog{
+  border: 2px solid #0363ff;
+  transition: all 0.4s;
+}
+.blog-btn .btn:hover, .add-blog:hover{
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #0363ff;
+}
+
+svg {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+.top-bar {
+  background: linear-gradient(to top, rgba(10, 10, 10, 0) 10%, #0a0a0a 90%);
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  color: #fefefe;
+  z-index: 2;
+}
+@media screen and (max-width: 42em) {
+  .top-bar .top-bar-left, .top-bar .top-bar-right {
+    flex: initial;
+  }
+}
+.top-bar ul {
+  background-color: transparent;
+}
+.top-bar ul.menu-items li.mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 42em) {
+  .top-bar ul.menu-items li.mobile-menu {
+    display: initial;
+  }
+}
+@media screen and (max-width: 42em) {
+  .top-bar ul.menu-items li {
+    display: none;
+  }
+}
+.top-bar ul a {
+  color: #fefefe;
+}
+.top-bar ul a:hover {
+  color: #f53363;
+}
+.top-bar .menu.logo {
+  font-family: "Sanchez", sans-serif;
+  font-size: 1.25rem;
+}
+.top-bar .menu-items {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  border-bottom: 6px solid #0a0a0a;
+  height: 650px;
+}
+.hero img{
+  object-fit: cover;
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hero {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .hero {
+    height: 240px;
+  }
+}
+.hero--bottom-gradient {
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 10%, #0a0a0a 90%);
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.article {
+  margin-bottom: 6rem;
+}
+.article--container {
+  position: relative;
+}
+.article--header {
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+.article--meta a {
+  color: #fefefe;
+  border-bottom: 1px solid #fefefe;
+  padding-bottom: 2px;
+}
+.article--meta a:hover {
+  text-decoration: none;
+  color: #f53363;
+  border-color: #f53363;
+}
+.article--meta .author {
+  margin: 0;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+}
+.article--meta .author span {
+  margin: 0 0.5rem;
+}
+.article--meta .breadcrumbs {
+  margin: 0;
+}
+.article--body {
+  border-top: 6px solid #0a0a0a;
+  top: -8rem;
+  position: absolute;
+  background-color: #fefefe;
+  padding: 2rem 3rem;
+  box-shadow: 2px 2px 18px -5px;
+}
+@media screen and (max-width: 39.9375em) {
+  .article--body {
+    padding: 1rem;
+  }
+}
+.article--body p {
+  margin-bottom: 3rem;
+  text-indent: 30px;
+  line-height: 1.9;
+  text-align: justify;
+}
+.article--body .latest-headlines {
+  margin-right: 4rem;
+  padding-bottom: 1rem;
+  float: left;
+}
+.article--body .latest-headlines h5 {
+  margin-top: 2rem;
+  margin-bottom: -7px;
+}
+.article--body .latest-headlines ul {
+  border-top: 3px solid #0a0a0a;
+  margin: 0 0.5rem 2rem 0;
+  font-size: 90%;
+}
+.article--body .latest-headlines ul li a {
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+.article--body .latest-headlines ul li a small {
+  color: #8a8a8a;
+  display: block;
+}
+.article blockquote {
+  font-size: 1.25rem;
+  margin: 3rem 1rem;
+  border-left: 0;
+  text-align: right;
+}
+.article blockquote cite {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 8px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #6a64f1;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+ 
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
